@@ -10,7 +10,16 @@ public class Mathematics {
 	{
 		Random random = new Random();
 		int number =random.nextInt(end);
-		int add=number + 1;
+		int add=0;
+		if(number<=start)
+		{
+			 add=number+start;
+			
+		}
+		else
+		{
+			add=number;
+		}
 		
 		return add;
 	}
