@@ -39,20 +39,15 @@ public class WhileLoopClass {
 			
 			System.out.println("Do u want to continue");
 			z=scan.next();
-			
-			
-			
-					
 		
 		}
-			
-		
 		
 		}
 	
 	public void SavePerson(Person p)
 	{
-		
+		// mock statements -- but actually Person detaials will be 
+		// saved to database or file.
 		System.out.println("FirstName" +p.firstName);
 		System.out.println("LastName" +p.lastName);
 		System.out.println("DOB" +p.dob);
