@@ -17,6 +17,10 @@ public class Test {
 		
 		ForLoopTest loop=new ForLoopTest();
 		loop.testForLoop(300);
+		
+		
+//		ReplaceForWithWhile replace=new ReplaceForWithWhile();
+//		replace.testWhileLoopInsteadOfFor(100);
 
 	}
 
