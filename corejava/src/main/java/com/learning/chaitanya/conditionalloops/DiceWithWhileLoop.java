@@ -17,7 +17,7 @@ public class DiceWithWhileLoop {
 		while(d.equals("y"))
 		{
 			Mathematics math=new Mathematics();
-			int m= math.getNumber(5, 10);
+			int m= math.getNumber(0, 55);
 			System.out.println("Your number is: " +m);
 			 
 			

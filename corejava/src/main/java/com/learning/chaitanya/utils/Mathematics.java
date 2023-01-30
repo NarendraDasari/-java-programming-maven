@@ -10,10 +10,15 @@ public class Mathematics {
 	{
 		Random random = new Random();
 		int number =random.nextInt(end);
-		int add=0;
+			int add=0;
 		if(number<=start)
 		{
+			
 			 add=number+start;
+		}
+		if(add>=end)
+		{
+			return end;
 			
 		}
 		else
