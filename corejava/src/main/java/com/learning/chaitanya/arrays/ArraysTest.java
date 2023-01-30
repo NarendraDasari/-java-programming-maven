@@ -13,15 +13,22 @@ public class ArraysTest {
 //		students[2]="narendra";
 //		students[3]="dasari";
 		
-		System.out.println("Enter first value:");
+		
 		Scanner scan=new Scanner(System.in);
-		students[0]=scan.next();
-		System.out.println("Enter Second value:");
-		students[1]=scan.next();
-		System.out.println("Enter 3rd value:");
-		students[2]=scan.next();
-		System.out.println("Enter 4th value:");
-		students[3]=scan.next();
+		
+		for(int i=0;i<students.length;i++)
+		{
+			System.out.println("Enter " + i + "th value:");
+			students[i]=scan.next();
+		}
+//		System.out.println("Enter first value:");
+//		
+//		students[0]=scan.next();
+//		System.out.println("Enter Second value:");
+//		students[1]=scan.next();
+//		System.out.println("Enter 3rd value:");
+//		students[2]=scan.next();
+		
 		
 		
 				
@@ -32,10 +39,6 @@ public class ArraysTest {
 	System.out.println("Welcome" + "," + students[i]);
 		}
 		
-		
-		// Welcome, chaita
-		//
-		
-	}
+		}
 
 }
