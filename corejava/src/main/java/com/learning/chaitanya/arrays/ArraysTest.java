@@ -3,11 +3,11 @@ package com.learning.chaitanya.arrays;
 import java.util.Scanner;
 
 public class ArraysTest {
-	public void testSimpleArrays()
+	public void testSimpleArrays(int size)
 	{
 	//System.out.println("Executing simple arrays program");	
 		
-		String[] students=new String[4];
+		String[] students=new String[size];
 //		students[0]="chaitanya";
 //		students[1]="nanduri";
 //		students[2]="narendra";

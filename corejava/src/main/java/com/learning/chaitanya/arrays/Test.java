@@ -5,7 +5,7 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArraysTest array=new ArraysTest();
-		array.testSimpleArrays();
+		array.testSimpleArrays(5);
 
 	}
 
