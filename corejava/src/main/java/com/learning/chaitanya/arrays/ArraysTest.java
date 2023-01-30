@@ -11,14 +11,13 @@ public class ArraysTest {
 		students[2]="narendra";
 		students[3]="dasari";
 		
+				
 		
+		for(int i=0;i<students.length;i++)
+		{
 		
-		System.out.println("Welcome" + "," + students[0]);
-		System.out.println("Welcome" + "," + students[1]);
-		System.out.println("Welcome" + "," + students[2]);
-		System.out.println("Welcome" + "," + students[3]);
-		
-		
+	System.out.println("Welcome" + "," + students[i]);
+		}
 		
 		
 		// Welcome, chaita
