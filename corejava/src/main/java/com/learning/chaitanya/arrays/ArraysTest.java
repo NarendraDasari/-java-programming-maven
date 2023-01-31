@@ -2,6 +2,8 @@ package com.learning.chaitanya.arrays;
 
 import java.util.Scanner;
 
+import com.learning.chaitanya.models.*;
+
 public class ArraysTest {
 	public void testSimpleArrays(int size)
 	{
@@ -21,16 +23,6 @@ public class ArraysTest {
 			System.out.println("Enter " + i + "th value:");
 			students[i]=scan.next();
 		}
-//		System.out.println("Enter first value:");
-//		
-//		students[0]=scan.next();
-//		System.out.println("Enter Second value:");
-//		students[1]=scan.next();
-//		System.out.println("Enter 3rd value:");
-//		students[2]=scan.next();
-		
-		
-		
 				
 		
 		for(int i=0;i<students.length;i++)
@@ -40,5 +32,36 @@ public class ArraysTest {
 		}
 		
 		}
+	
+	
+	public void testSimpleArrays(Person[] personlist)
+	{
+
+		for(int i=0;i<personlist.length;i++)
+		{
+			System.out.println("Person details");
+			Person x=personlist[i];
+			System.out.println("Firstname:" + x.firstName);
+			System.out.println("Lastname:" + x.lastName);
+			System.out.println("DOB:" + x.dob);
+			System.out.println("Age:" + x.age);
+		}
+	
+	}
+	
+	
+	public void printVehicals(Vehical[] vechicalList)
+	{
+		for(int i=0;i<vechicalList.length;i++)
+		{
+			System.out.println("Vehical details");
+			Vehical v=vechicalList[i];
+			System.out.println("make:" + v.make);
+			System.out.println("model:" + v.model);
+			System.out.println("color:" + v.color);
+			
+			
+		}
+	}
 
 }
