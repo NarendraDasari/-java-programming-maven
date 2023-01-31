@@ -8,9 +8,19 @@ public class Test {
     // WhileLoopClass obj=new WhileLoopClass();
     // obj.testWhileloop();
 		
-		DiceWithWhileLoop dic=new DiceWithWhileLoop();
-		dic.testDice();
-     	
+//		DiceWithWhileLoop dic=new DiceWithWhileLoop();
+//		dic.testDice();
+		
+		
+//     	
+		
+		
+		ForLoopTest loop=new ForLoopTest();
+		loop.testForLoop(300);
+		
+		
+//		ReplaceForWithWhile replace=new ReplaceForWithWhile();
+//		replace.testWhileLoopInsteadOfFor(100);
 
 	}
 
