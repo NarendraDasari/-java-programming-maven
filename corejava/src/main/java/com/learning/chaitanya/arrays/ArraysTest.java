@@ -44,7 +44,7 @@ public class ArraysTest {
 			System.out.println("Firstname:" + x.firstName);
 			System.out.println("Lastname:" + x.lastName);
 			System.out.println("DOB:" + x.dob);
-			System.out.println("Age:" + x.age);
+			//System.out.println("Age:" + x.age);
 		}
 	
 	}

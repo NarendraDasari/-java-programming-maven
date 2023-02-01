@@ -34,7 +34,7 @@ public class WhileLoopClass {
 			per.firstName = fname;
 			per.lastName=lname;
 			per.dob=dob;
-			per.age=age;
+			//per.age=age;
 			SavePerson(per);
 			
 			System.out.println("Do u want to continue");
@@ -51,7 +51,7 @@ public class WhileLoopClass {
 		System.out.println("FirstName" +p.firstName);
 		System.out.println("LastName" +p.lastName);
 		System.out.println("DOB" +p.dob);
-		System.out.println("Age"+p.age);
+		//System.out.println("Age"+p.age);
 		System.out.println(p.firstName + ", You are successfully enrolled.");
 	}
 	

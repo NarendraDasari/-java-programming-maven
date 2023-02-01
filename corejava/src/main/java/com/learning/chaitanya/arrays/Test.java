@@ -17,19 +17,19 @@ public class Test {
 		p1.firstName = "p1-firstname";
 		p1.lastName = "p1-lastname";
 		p1.dob = "2024";
-		p1.age = 2;
+		//p1.age = 2;
 		
 		Person p2 = new Person();
 		p2.firstName = "p2-firstname";
 		p2.lastName = "p2-lastName";
 		p2.dob = "2021";
-		p2.age = 56;
+		//p2.age = 56;
 		
 		Person p3=new Person();
 		p3.firstName="p3-xxxxx";
 		p3.lastName="p3-yyyyy";
 		p3.dob="2000";
-		p3.age=3;
+		//p3.age=3;
 
 		
 		
