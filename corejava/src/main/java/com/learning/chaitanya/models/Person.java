@@ -5,6 +5,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDate;
+import java.time.Period;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Date;
@@ -14,7 +15,7 @@ public class Person {
 	public String firstName;
 	public String lastName;
 	public String dob;
-	//private int age;
+	private int age;
 	
 	
 	
@@ -25,47 +26,27 @@ public class Person {
 		// get todays date.
 		// if we can compare todays date with the converted date type we will 
 		// - get the difference between this two dates.
-		 SimpleDateFormat sdf=new SimpleDateFormat("YYYY-MM-dd");
+		 SimpleDateFormat sdf=new SimpleDateFormat("MM/dd/yyyy");
+		
 		 try {
-			 String formattedDob  = dob.replaceAll("/", "-");
-			Date startDate = sdf.parse(formattedDob);
-			
+		 Date startDate = sdf.parse(dob);
 			Instant instant=startDate.toInstant();
 			ZonedDateTime z=instant.atZone(ZoneId.systemDefault());
 			LocalDate start_date=z.toLocalDate();
+			LocalDate end_date=LocalDate.now();
+			 
+			 Period diff
+	            = Period
+	                  .between(start_date,
+	                           end_date);
 			
-			start_date.getYear();
-			System.out.println("year:"+ start_date.getYear());
-			
-			
-			
-			
+			 age = diff.getYears();
+		
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		 
-		// DateFormat.
-		 
-		 Date d=new Date();
-		 
-		// LocalDate startDate = LocalDate.parse(dob);
-
-		// System.out.println("year:" +d.getYear());
-		 System.out.println(d);
-		 System.out.println(sdf.format(d));
-		 
-		 LocalDate local=LocalDate.now();
-		  int year=local.getYear();
-		 
-		int month= local.getMonthValue();
-		 
-		 int day=local.getDayOfMonth();
-		 
-		System.out.println(LocalDate.now());
-		
-		//LocalDate lDate = LocalDate.
-		return 25;
+		return age;
 	}
 	
 }
